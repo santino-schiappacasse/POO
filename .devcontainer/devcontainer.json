@@ -1,0 +1,23 @@
+{
+  "name": "Ruby 4 (POO)",
+  "image": "mcr.microsoft.com/devcontainers/ruby:4.0-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "shopify.ruby-lsp",
+        "koichisasada.vscode-rdbg",
+        "jebbs.plantuml"
+      ],
+      "settings": {
+        "ruby.useLanguageServer": true,
+        "rubyLsp.rubyVersionManager": "none",
+        "plantuml.render": "Local"
+      }
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "remoteUser": "vscode"
+}
